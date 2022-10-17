@@ -13,7 +13,7 @@ Bir Next.js sayfasına üçüncü taraf komut dosyasını nasıl ekleyebileceği
 
 Editörünüzde `pages/posts/first-post.js` açın ve aşağıdaki satırları bulun:
 
-```js
+```html
 <Head>
   <title>First Post</title>
 </Head>
@@ -22,7 +22,7 @@ Editörünüzde `pages/posts/first-post.js` açın ve aşağıdaki satırları b
 Meta verilere ek olarak, mümkün olan en kısa sürede yüklenmesi ve yürütülmesi gereken komut dosyaları genellikle `<head>` içine eklenir. Normal bir HTML `<script>` öğesi kullanarak, aşağıdaki gibi harici bir komut dosyası eklenir:
 
 
-```js
+```html
 <Head>
   <title>First Post</title>
   <script src="https://connect.facebook.net/en_US/sdk.js" />

@@ -20,7 +20,7 @@ Next.js , üst düzey dizin altında resimler gibi statik varlıklar sunabilir. 
 
 Normal HTML ile profil resminizi aşağıdaki gibi eklersiniz:
 
-```js
+```html
 <img src="/images/profile.jpg" alt="Your Name" />
 ```
 

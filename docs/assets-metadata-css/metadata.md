@@ -12,7 +12,7 @@ sidebar_position: 2
 
 `pages/index.js` editörünüzde açın ve ağıdaki adımları takip edin.
 
-```js
+```html
 <Head>
   <title>Create Next App</title>
   <link rel="icon" href="/favicon.ico" />
