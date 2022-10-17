@@ -12,7 +12,7 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/apple-touch-icon.png",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -29,7 +29,7 @@ const config = {
 
   presets: [
     [
-      "classic",
+      "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -41,8 +41,8 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-        googleAnalytics: {
-          trackingID: "G-06JHKDCYBT",
+        gtag: {
+          trackingID: 'G-06JHKDCYBT',
           anonymizeIP: true,
         },
       }),
@@ -56,7 +56,7 @@ const config = {
         title: "Next.js TR",
         logo: {
           alt: "Next.js TR",
-          src: "img/logo.svg",
+          src: "img/apple-touch-icon.png",
         },
         items: [
           {
@@ -102,7 +102,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/bilalkarakollu",
               },
             ],
           },
