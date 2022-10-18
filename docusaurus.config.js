@@ -91,6 +91,10 @@ const config = {
                 label: "Twitter",
                 href: "https://twitter.com/nextjs_tr",
               },
+              {
+                label: "Instagram",
+                href: "https://www.instagram.com/nextjs_tr/",
+              },
             ],
           },
           {
