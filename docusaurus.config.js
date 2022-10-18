@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Next.js Türkçe Dökümantasyon",
   tagline: "Dynamic without limits",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://nextjs-tr.org/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -100,10 +100,6 @@ const config = {
           {
             title: "More",
             items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
               {
                 label: "GitHub",
                 href: "https://github.com/bilalkarakollu",
