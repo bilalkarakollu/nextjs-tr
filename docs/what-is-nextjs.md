@@ -27,7 +27,7 @@ Uygulamanızın her bir parçası için, kendiniz bir çözüm oluşturup oluşt
 
 Kullanıcı arayüzleri ile, kullanıcıların ekranda gördüğü ve etkileşimde bulunduğu öğeleri kastediyoruz.
 
-<img src="https://nextjs.org/static/images/learn/foundations/user-interface.png"/>
+<img src="/img/learn/learn-react-components.jpeg"/>
 
 Kitaplık derken, React'in kullanıcı arayüzü oluşturmak için yararlı işlevler sağladığını kastediyoruz, ancak bu işlevlerin uygulamalarında nerede kullanılacağını geliştiriciye bırakıyor.
 
@@ -41,7 +41,7 @@ Next.js, web uygulamaları oluşturmanız için size yapı taşları sağlayan b
 
 Çerçeve olarak, Next.js'nin React için gereken araçları ve yapılandırmayı yönettiğini ve uygulamanız için ek yapı, özellikler ve optimizasyonlar sağladığını kastediyoruz.
 
-<img src="https://nextjs.org/static/images/learn/foundations/next-app.png"/>
+<img src="/img/learn/learn-ecosystem.jpeg"/>
 
 
 Kullanıcı arayüzünüzü oluşturmak için React'i kullanabilir, ardından yönlendirme, veri alma, entegrasyonlar gibi yaygın uygulama gereksinimlerini çözmek için Next.js özelliklerini aşamalı olarak benimseyebilirsiniz - tüm bunları yaparken geliştirici ve son kullanıcı deneyimini iyileştirebilirsiniz.

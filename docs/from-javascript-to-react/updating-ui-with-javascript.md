@@ -12,9 +12,9 @@ Kod düzenleyicinizi açın ve yeni bir index.htmldosya oluşturun. HTML dosyas�
 ```html
 <!-- index.html -->
 <html>
-  <body>
-    <div></div>
-  </body>
+<body>
+<div></div>
+</body>
 </html>
 ```
 
@@ -23,9 +23,9 @@ Ardından, daha sonra hedefleyebilmeniz için `div` benzersiz bir `id` verin.
 ```html
 <!-- index.html -->
 <html>
-  <body>
-    <div id="app"></div>
-  </body>
+<body>
+<div id="app"></div>
+</body>
 </html>
 
 ```
@@ -35,10 +35,10 @@ HTML dosyanızın içine JavaScript yazmak için bir ``script`` etiket ekleyin:
 ```html
 <!-- index.html -->
 <html>
-  <body>
-    <div id="app"></div>
-    <script type="text/javascript"></script>
-  </body>
+<body>
+<div id="app"></div>
+<script type="text/javascript"></script>
+</body>
 </html>
 ```
 
@@ -47,13 +47,13 @@ HTML dosyanızın içine JavaScript yazmak için bir ``script`` etiket ekleyin:
 ```html
 <!-- index.html -->
 <html>
-  <body>
-    <div id="app"></div>
+<body>
+<div id="app"></div>
 
-    <script type="text/javascript">
-      const app = document.getElementById('app');
-    </script>
-  </body>
+<script type="text/javascript">
+    const app = document.getElementById('app');
+</script>
+</body>
 </html>
 ```
 
@@ -62,28 +62,28 @@ Yeni bir h1 öğesi oluşturmak için DOM yöntemlerini kullanmaya devam edebili
 ```html
 <!-- index.html -->
 <html>
-  <body>
-    <div id="app"></div>
+<body>
+<div id="app"></div>
 
-    <script type="text/javascript">
-      // Select the div element with 'app' id
-      const app = document.getElementById('app');
+<script type="text/javascript">
+    // Select the div element with 'app' id
+    const app = document.getElementById('app');
 
-      // Create a new H1 element
-      const header = document.createElement('h1');
+    // Create a new H1 element
+    const header = document.createElement('h1');
 
-      // Create a new text node for the H1 element
-      const headerContent = document.createTextNode(
-        'Develop. Preview. Ship. 🚀',
-      );
+    // Create a new text node for the H1 element
+    const headerContent = document.createTextNode(
+            'Develop. Preview. Ship. 🚀',
+    );
 
-      // Append the text to the H1 element
-      header.appendChild(headerContent);
+    // Append the text to the H1 element
+    header.appendChild(headerContent);
 
-      // Place the H1 element inside the div
-      app.appendChild(header);
-    </script>
-  </body>
+    // Place the H1 element inside the div
+    app.appendChild(header);
+</script>
+</body>
 </html>
 ```
 
@@ -93,7 +93,7 @@ Her şeyin çalıştığından emin olmak için HTML dosyanızı tercih ettiğin
 
 Tarayıcı geliştirici araçlarınızdaki DOM öğelerine bakarsanız, DOM'nin `<h1>` öğeyisini içerdiğini fark edeceksiniz. Sayfanın DOM'si kaynak koddan veya başka bir deyişle, oluşturduğunuz orijinal HTML dosyasından farklıdır.
 
-<img src="https://nextjs.org/static/images/learn/foundations/source-code.png"/>
+<img src="/img/learn/learn-dom-and-source.jpeg"/>
 
 Bunun nedeni, HTML'nin ilk sayfa içeriğini temsil etmesi, DOM'nin ise yazdığınız JavaScript koduyla değiştirilen güncellenmiş sayfa içeriğini temsil etmesidir.
 
@@ -102,11 +102,11 @@ DOM'yi düz JavaScript ile güncellemek çok güçlü ancak ayrıntılıdır. T�
 ```html
 <!-- index.html -->
 <script type="text/javascript">
-  const app = document.getElementById('app');
-  const header = document.createElement('h1');
-  const headerContent = document.createTextNode('Develop. Preview. Ship. 🚀');
-  header.appendChild(headerContent);
-  app.appendChild(header);
+    const app = document.getElementById('app');
+    const header = document.createElement('h1');
+    const headerContent = document.createTextNode('Develop. Preview. Ship. 🚀');
+    header.appendChild(headerContent);
+    app.appendChild(header);
 </script>
 ```
 

@@ -9,16 +9,16 @@ sidebar_position: 6
 
 ```js
 function Header() {
-  return <h1>Develop. Preview. Ship. 🚀</h1>;
+    return <h1>Develop. Preview. Ship. 🚀</h1>;
 }
 
 function HomePage() {
-  return (
-    <div>
-      <Header />
-      <Header />
-    </div>
-  );
+    return (
+        <div>
+            <Header />
+            <Header />
+        </div>
+    );
 }
 ```
 
@@ -28,7 +28,7 @@ Normal HTML öğeleri, bu öğelerin davranışını değiştiren bilgi parçala
 
 Aynı şekilde, React bileşenlerine özellik olarak bilgi parçalarını iletebilirsiniz. Bunlara `props` denir.
 
-<img src="https://nextjs.org/static/images/learn/foundations/props.png"/>
+<img src="/img/learn/learn-props.jpeg"/>
 
 JavaScript işlevine benzer şekilde, bileşenin davranışını veya ekrana işlendiğinde görünür şekilde gösterilenleri değiştiren özel argümanları (veya destekleri) kabul eden bileşenler tasarlayabilirsiniz. Ardından, bu aksesuarları ana bileşenlerden alt bileşenlere aktarabilirsiniz.
 
@@ -46,11 +46,11 @@ Not: React'te veriler bileşen ağacından aşağı akar. Buna tek yönlü veri 
 // }
 
 function HomePage() {
-  return (
-    <div>
-      <Header title="React 💙" />
-    </div>
-  );
+    return (
+        <div>
+            <Header title="React 💙" />
+        </div>
+    );
 }
 
 // ReactDOM.render(<HomePage />, app)
@@ -117,8 +117,8 @@ Ardından etiketin içeriğini `<h1>` başlık değişkeninizle değiştirebilir
 
 ```js
 function Header({ title }) {
-  console.log(title);
-  return <h1>title</h1>;
+    console.log(title);
+    return <h1>title</h1>;
 }
 ```
 
@@ -143,7 +143,7 @@ Kıvrımlı parantezleri "JSX arazisi" içindeyken "JavaScript arazisine" girmen
 
 ```js
 function Header(props) {
-  return <h1>{props.title}</h1>;
+    return <h1>{props.title}</h1>;
 }
 ```
 
@@ -151,7 +151,7 @@ function Header(props) {
 
 ```js
 function Header({ title }) {
-  return <h1>{`Cool ${title}`}</h1>;
+    return <h1>{`Cool ${title}`}</h1>;
 }
 ```
 
@@ -159,15 +159,15 @@ function Header({ title }) {
 
 ```js
 function createTitle(title) {
-  if (title) {
-    return title;
-  } else {
-    return 'Default title';
-  }
+    if (title) {
+        return title;
+    } else {
+        return 'Default title';
+    }
 }
 
 function Header({ title }) {
-  return <h1>{createTitle(title)}</h1>;
+    return <h1>{createTitle(title)}</h1>;
 }
 ```
 
@@ -175,7 +175,7 @@ function Header({ title }) {
 
 ```js
 function Header({ title }) {
-  return <h1>{title ? title : 'Default Title'}</h1>;
+    return <h1>{title ? title : 'Default Title'}</h1>;
 }
 ```
 
@@ -184,15 +184,15 @@ Artık herhangi bir dizeyi başlık desteğinize iletebilirsiniz ve bileşeniniz
 
 ```js
 function Header({ title }) {
-  return <h1>{title ? title : 'Default title'}</h1>;
+    return <h1>{title ? title : 'Default title'}</h1>;
 }
 
 function Page() {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
+    return (
+        <div>
+            <Header />
+        </div>
+    );
 }
 ```
 
@@ -200,12 +200,12 @@ Bileşeniniz artık uygulamanızın farklı bölümlerinde yeniden kullanabilece
 
 ```js
 function Page() {
-  return (
-    <div>
-      <Header title="React 💙" />
-      <Header title="A new title" />
-    </div>
-  );
+    return (
+        <div>
+            <Header title="React 💙" />
+            <Header title="A new title" />
+        </div>
+    );
 }
 ```
 
@@ -217,13 +217,13 @@ Liste olarak göstermeniz gereken verilere sahip olmak yaygındır. Verilerinizi
 
 ```js
 function HomePage() {
-  const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+    const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
 
-  return (
-    <div>
-      <Header title="Develop. Preview. Ship. 🚀" />
-    </div>
-  );
+    return (
+        <div>
+            <Header title="Develop. Preview. Ship. 🚀" />
+        </div>
+    );
 }
 ```
 
@@ -231,18 +231,18 @@ Ardından, dizi üzerinde yineleme yapmak için `array.map()` yöntemi kullanabi
 
 ```js
 function HomePage() {
-  const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+    const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
 
-  return (
-    <div>
-      <Header title="Develop. Preview. Ship. 🚀" />
-      <ul>
-        {names.map((name) => (
-          <li>{name}</li>
-        ))}
-      </ul>
-    </div>
-  );
+    return (
+        <div>
+            <Header title="Develop. Preview. Ship. 🚀" />
+            <ul>
+                {names.map((name) => (
+                    <li>{name}</li>
+                ))}
+            </ul>
+        </div>
+    );
 }
 ```
 
@@ -254,18 +254,18 @@ Bu kodu çalıştırırsanız, React bize eksik bir `key` prop hakkında bir uya
 
 ```js
 function HomePage() {
-  const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+    const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
 
-  return (
-    <div>
-      <Header title="Develop. Preview. Ship. 🚀" />
-      <ul>
-        {names.map((name) => (
-          <li key={name}>{name}</li>
-        ))}
-      </ul>
-    </div>
-  );
+    return (
+        <div>
+            <Header title="Develop. Preview. Ship. 🚀" />
+            <ul>
+                {names.map((name) => (
+                    <li key={name}>{name}</li>
+                ))}
+            </ul>
+        </div>
+    );
 }
 ```
 
