@@ -10,20 +10,20 @@ React'in durum(state) ve olay işleyicilerle(event handlers) etkileşim eklememi
 
 ```js
 function HomePage() {
-  const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+    const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
 
-  return (
-    <div>
-      <Header title="Develop. Preview. Ship. 🚀" />
-      <ul>
-        {names.map((name) => (
-          <li key={name}>{name}</li>
-        ))}
-      </ul>
+    return (
+        <div>
+            <Header title="Develop. Preview. Ship. 🚀" />
+            <ul>
+                {names.map((name) => (
+                    <li key={name}>{name}</li>
+                ))}
+            </ul>
 
-      <button>Like</button>
-    </div>
-  );
+            <button>Like</button>
+        </div>
+    );
 }
 ```
 
@@ -33,13 +33,13 @@ Butonun tıklandığında bir şeyler yapmasını sağlamak için `onClick` kola
 
 ```js
 function HomePage() {
-  // ...
-  return (
-    <div>
-      {/* ... */}
-      <button onClick={}>Like</button>
-    </div>
-  );
+    // ...
+    return (
+        <div>
+            {/* ... */}
+            <button onClick={}>Like</button>
+        </div>
+    );
 }
 ```
 
@@ -51,36 +51,36 @@ Olayları tetiklendikleri zaman "işlemek" için bir işlev tanımlayabilirsiniz
 
 ```js
 function HomePage() {
-  // ...
+    // ...
 
-  function handleClick() {
-    console.log("increment like count")
-  }
+    function handleClick() {
+        console.log("increment like count")
+    }
 
-  return (
-    <div>
-      {/* ... */}
-      <button onClick={}>Like</button>
-    </div>
-     )
-   }
+    return (
+        <div>
+            {/* ... */}
+            <button onClick={}>Like</button>
+        </div>
+    )
+}
 ```
 
 Ardından, `onClick` olayı tetiklendiğinde `handleClick` işlevi çağırabilirsiniz:
 
 ```js
 function HomePage() {
-  //    ...
-  function handleClick() {
-    console.log('increment like count');
-  }
+    //    ...
+    function handleClick() {
+        console.log('increment like count');
+    }
 
-  return (
-    <div>
-      {/* ... */}
-      <button onClick={handleClick}>Like</button>
-    </div>
-  );
+    return (
+        <div>
+            {/* ... */}
+            <button onClick={handleClick}>Like</button>
+        </div>
+    );
 }
 ```
 
@@ -89,13 +89,13 @@ function HomePage() {
 <a href="https://reactjs.org/docs/hooks-intro.html">React'in hooks</a> adı verilen bir dizi işlevi vardır. Kancalar, bileşenlerinize durum gibi ek mantık eklemenize olanak tanır. Durumu, genellikle kullanıcı etkileşimi tarafından tetiklenen, zaman içinde değişen, kullanıcı arayüzünüzdeki herhangi bir bilgi olarak düşünebilirsiniz.
 
 
-<img src="https://nextjs.org/static/images/learn/foundations/state.png"/>
+<img src="/img/learn/learn-state.jpeg"/>
 
 Bir kullanıcının beğen düğmesini tıklama sayısını depolamak ve artırmak için state kullanabilirsiniz. Aslında, durumu yönetmek için React kancasının adı budur: `useState()`
 
 ```js
 function HomePage() {
-  React.useState();
+    React.useState();
 }
 ```
 
@@ -103,9 +103,9 @@ function HomePage() {
 
 ```js
 function HomePage() {
-  const [] = React.useState();
+    const [] = React.useState();
 
-  // ...
+    // ...
 }
 ```
 
@@ -113,9 +113,9 @@ Dizideki ilk öğe, herhangi bir `value` şey adlandırabileceğiniz durumdur. A
 
 ```js
 function HomePage() {
-  const [likes] = React.useState();
+    const [likes] = React.useState();
 
-  // ...
+    // ...
 }
 ```
 
@@ -123,9 +123,9 @@ Dizideki ikinci öğe update, değerin bir işlevidir. Güncelleme işlevine her
 
 ```js
 function HomePage() {
-  const [likes, setLikes] = React.useState();
+    const [likes, setLikes] = React.useState();
 
-  // ...
+    // ...
 }
 ```
 
@@ -133,7 +133,7 @@ Ayrıca, state `likes` inizin başlangıç ​​değerini ekleme fırsatını d
 
 ```js
 function HomePage() {
-  const [likes, setLikes] = React.useState(0);
+    const [likes, setLikes] = React.useState(0);
 }
 ```
 
@@ -141,13 +141,13 @@ Ardından, bileşeninizin içindeki durum değişkenini kullanarak ilk durumun �
 
 ```js
 function HomePage() {
-  // ...
-  const [likes, setLikes] = React.useState(0);
-
-  return (
     // ...
-    <button onClick={handleClick}>Like({likes})</button>
-  );
+    const [likes, setLikes] = React.useState(0);
+
+    return (
+        // ...
+        <button onClick={handleClick}>Like({likes})</button>
+    );
 }
 ```
 
@@ -155,19 +155,19 @@ Son olarak , `HomePage` bileşeninizde durum `setLikes` güncelleyici işleviniz
 
 ```js
 function HomePage() {
-  // ...
-  const [likes, setLikes] = React.useState(0);
+    // ...
+    const [likes, setLikes] = React.useState(0);
 
-  function handleClick() {
-    setLikes(likes + 1);
-  }
+    function handleClick() {
+        setLikes(likes + 1);
+    }
 
-  return (
-    <div>
-      {/* ... */}
-      <button onClick={handleClick}>Likes ({likes})</button>
-    </div>
-  );
+    return (
+        <div>
+            {/* ... */}
+            <button onClick={handleClick}>Likes ({likes})</button>
+        </div>
+    );
 }
 ```
 

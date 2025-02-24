@@ -10,7 +10,7 @@ React'in nasıl çalıştığını anlamak için öncelikle tarayıcıların etk
 
 Bir kullanıcı bir web sayfasını ziyaret ettiğinde, sunucu tarayıcıya şuna benzeyen bir HTML dosyası döndürür:
 
-<img src="https://nextjs.org/static/images/learn/foundations/html-to-dom.png"/>
+<img src="/img/learn/learn-html-and-dom.jpeg"/>
 
 Tarayıcı daha sonra HTML'yi okur ve Belge Nesne Modelini (DOM) oluşturur.
 
@@ -18,7 +18,7 @@ Tarayıcı daha sonra HTML'yi okur ve Belge Nesne Modelini (DOM) oluşturur.
 
 DOM, HTML öğelerinin nesne temsilidir. Kodunuz ve kullanıcı arayüzü arasında bir köprü görevi görür ve ebeveyn ve çocuk ilişkileri ile ağaç benzeri bir yapıya sahiptir.
 
-<img src="https://nextjs.org/static/images/learn/foundations/dom-to-ui.png"/>
+<img src="/img/learn/learn-dom-and-ui.jpeg"/>
 
 Kullanıcı olaylarını dinlemek ve kullanıcı arabirimindeki belirli öğeleri seçerek, ekleyerek, güncelleyerek ve silerek <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents">DOM'yi işlemek için</a> DOM yöntemlerini ve JavaScript gibi bir programlama dilini kullanabilirsiniz. DOM manipülasyonu, yalnızca belirli öğeleri hedeflemenize değil, aynı zamanda stillerini ve içeriklerini değiştirmenize de olanak tanır.
 

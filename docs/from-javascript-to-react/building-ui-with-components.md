@@ -8,7 +8,7 @@ Kullanıcı arayüzleri, bileşen(component) adı verilen daha küçük yapı ta
 
 Bileşenler, bağımsız, yeniden kullanılabilir kod parçacıkları oluşturmanıza olanak tanır. Bileşenleri LEGO tuğlaları olarak düşünüyorsanız, bu ayrı tuğlaları alıp daha büyük yapılar oluşturmak için bir araya getirebilirsiniz. Kullanıcı arayüzünün bir parçasını güncellemeniz gerekiyorsa, belirli bileşeni veya tuğlayı güncelleyebilirsiniz.
 
-<img src="https://nextjs.org/static/images/learn/foundations/components.png"/>
+<img src="/img/learn/learn-components.jpeg"/>
 
 Bu modülerlik, uygulamamızın geri kalanına dokunmadan bileşenleri kolayca ekleyebildiğiniz, güncelleyebildiğiniz ve silebildiğiniz için kodunuzun büyüdükçe daha sürdürülebilir olmasını sağlar.
 
@@ -122,7 +122,7 @@ ReactDOM.render(<Header />, app);
 
 Bileşen ağaçları oluşturmak için React bileşenlerini bu şekilde iç içe yerleştirmeye devam edebilirsiniz.
 
-<img src="https://nextjs.org/static/images/learn/foundations/component-tree.png"/>
+<img src="/img/learn/learn-component-tree.jpeg"/>
 
 Örneğin, üst düzey HomePagebileşeniniz bir Header, bir Articleve bir FooterBileşen içerebilir. Ve bu bileşenlerin her birinin sırayla kendi alt bileşenleri olabilir. Örneğin, `Header` bileşeni, `Logo`, `Title`, `Navigation` bileşeni içerebilir.
 
@@ -132,15 +132,15 @@ Projenizde, artık en üst düzey bileşeniniz `<HomePage>` olduğundan, onu `Re
 
 ```js
 function Header() {
-  return <h1>Develop. Preview. Ship. 🚀</h1>;
+    return <h1>Develop. Preview. Ship. 🚀</h1>;
 }
 
 function HomePage() {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
+    return (
+        <div>
+            <Header />
+        </div>
+    );
 }
 
 ReactDOM.render(<HomePage />, app);
